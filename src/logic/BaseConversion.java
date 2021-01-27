@@ -8,6 +8,14 @@ public class BaseConversion {
 		//変更後が何桁になるか計算
 		int digits = getDigits(prototypeNumber, modNumber);
 
+		//元の値をX進数表記に変更する
+		BigDecimal changedNumber = getChangedNumber(prototypeNumber,modNumber,digits);
+
+		return changedNumber;
+	}
+
+	private static BigDecimal getChangedNumber(BigDecimal prototypeNumber, BigDecimal modNumber, int digits) {
+
 		return null;
 	}
 
